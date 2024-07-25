@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: Text('Add Task'),
                     content: TextField(
                       onChanged: (String value) {
-                        _input = value;
+                        // _input = value;
                       },
                       onSubmitted: (String value) {
                         _addTaskHandler();
@@ -65,7 +65,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 });
           },
           child: Icon(Icons.add),
-          backgroundColor: Theme.of(context).primaryColor,
         ),
         body: _todoList.length > 0
             ? ListView.builder(
